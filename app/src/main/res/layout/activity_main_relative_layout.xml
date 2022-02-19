@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgAvengers"
+        android:layout_width="235dp"
+        android:layout_height="233dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/avengers"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avengers"
+        android:layout_marginLeft="150dp"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#d84315"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/txtSubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:text="Comming Soon!"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:textColor="#0d47a1"
+        android:layout_below="@+id/txtHeader"/>
+
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#0091ea"
+        android:text="Click Here"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name here"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/txtSubHeader"/>
+
+
+
+</RelativeLayout>
