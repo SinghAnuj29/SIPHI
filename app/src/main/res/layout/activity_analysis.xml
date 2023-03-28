@@ -4,18 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MessageActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".AnalysisActivity">
 
     <TextView
         android:id="@+id/txtDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:padding="6dp"
-        android:text="Displaying Entered text"
+        android:text="User Analysis"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/frequency_response_graph" />
+
 
 </RelativeLayout>

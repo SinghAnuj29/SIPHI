@@ -1,55 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AvengersAcitivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="235dp"
-        android:layout_height="233dp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:src="@drawable/avengers" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Avengers"
-        android:layout_marginLeft="150dp"
-        android:padding="8dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#d84315"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="120dp"
-        android:text="Comming Soon!"
-        android:textSize="18sp"
-        android:padding="10dp"
-        android:textStyle="italic"
-        android:textColor="#0d47a1"/>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Click Here"
-        android:background="#0091ea"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="18sp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your name here"
-        android:layout_margin="20dp"
-        android:inputType="textPassword" />
+        android:orientation="vertical">
 
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_sound_recorder_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_below="@+id/textview_sound_recorder_heading"
+                android:background="@drawable/button_shape"/>
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textview_sound_recorder_heading"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_shape"/>
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:padding="10dp"
+                android:layout_below="@+id/textview_sound_recorder_heading"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"/>
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:padding="10dp"
+                android:layout_below="@+id/btnStart"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"/>
+
+
+        </RelativeLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtSampleRecord"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:paddingLeft="150dp"-->
+<!--            android:text="@string/sample_record"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:paddingTop="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:src="@drawable/sample_sound"/>-->
+
+        <TextView
+            android:id="@+id/txtSampleRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/expected_sample_record"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="370dp"
+            android:layout_marginStart="20dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/expected_sample" />
+
+        <TextView
+            android:id="@+id/txtSampleRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lip-Sync Animation"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+
+        <EditText
+            android:id="@+id/gifEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the word you want to proceed with"
+            android:padding="6dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"/>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/gifImageView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:contentDescription="Fruit Image"-->
+<!--            android:padding="6dp"-->
+<!--            android:layout_marginStart="20dp"/>-->
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/etDisplayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:hint="User Name"
+            android:padding="6dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Send"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Log Out"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

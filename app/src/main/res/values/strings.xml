@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">Activity Lifecycle</string>
-    <string name="new_app_name">Avengers</string>
-    <string name="mobile_number">Enter mobile Number</string>
+    <string name="app_name">Anuj App</string>
+    <string name="new_app_name">SIPHI</string>
+    <string name="mobile_number">Enter registered mobile Number</string>
     <string name="enter_password">Enter password</string>
     <string name="login">Log in</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="register">Register</string>
-    <string name="preference_file_name">Avengers Preferences</string>
+    <string name="preference_file_name">Siphi Preferences</string>
+    <string name="sample_record">Record</string>
+    <string name="expected_sample_record">Expected voice frequency graph for Hello World: -</string>
 </resources>
-
